@@ -1,0 +1,18 @@
+aws_region  = "us-west-1"
+vpc_name    = "shopnaija-vpc"
+environment = "prod"
+
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-west--1a", "us-west-1c"]
+
+public_subnet_cidrs   = ["10.0.1.0/24",  "10.0.2.0/24"]
+private_subnet_cidrs  = ["10.0.10.0/23", "10.0.12.0/23"]
+database_subnet_cidrs = ["10.0.20.0/24", "10.0.21.0/24"]
+
+single_nat_gateway     = true
+one_nat_gateway_per_az = false
+
+bastion_instance_type = "t3.micro"
+bastion_ami           = "YOUR_AMI_ID_HERE"
+bastion_key_name      = "YOUR_KEY_PAIR_NAME_HERE"
+devops_ip_whitelist   = ["YOUR_IP_HERE/32"]

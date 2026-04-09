@@ -1,0 +1,10 @@
+*.pem
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+crash.log
+.env
+*shopnaija-key
+
